@@ -83,13 +83,14 @@ body {
 
 .searchTerm {
   float: left;
-  width: 100%;
+  width: 70%;
   border: 3px solid #00B4CC;
   padding: 5px;
-  height: 20px;
+  height: 36px;
   border-radius: 5px;
   outline: none;
   color: #9DBFAF;
+  font-size: 20px;
 }
 
 .searchTerm:focus{
@@ -98,7 +99,6 @@ body {
 
 .searchButton {
   /*position: absolute;*/
-  right: -50px;
   width: 40px;
   height: 36px;
   border: 1px solid #00B4CC;
@@ -112,16 +112,14 @@ body {
 
 /*Resize the wrap to see the search bar change!*/
 .wrap{
-  width: 30%;
+  width: 100%;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 0%;
   padding: 5px;
   background-color: #cae8ca;
   border: 2px solid #4CAF50;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 25%;
 }
 /*End Search Input */
 
