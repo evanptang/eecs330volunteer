@@ -35,6 +35,10 @@ body {
   font-style: normal;
 
 }
+.logo img{
+  height: 60px;
+  width: 60px;
+}
 
 /*Begin Search Input */
 .searchwrap{
