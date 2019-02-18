@@ -1,9 +1,10 @@
 class Opportunity{
-  constructor(org_name, location, date, description){
+  constructor(org_name, location, date, description, filters){
     this.org_name = org_name;
     this.location = location;
     this.date = date;
     this.description = description;
+    this.filters = filters;
   }
   get org_name(){
     return this.org_name;
@@ -28,6 +29,7 @@ class Opportunity{
 var opportunities = [new Opportunity("American Red Cross", "Chicago", "March 1", "Blood Drive: Donors needed"),
                      new Opportunity("Northwestern Dance Marathon", "Evanston", "April 10", "Raise money and Dance!"),
                      new Opportunity("ETHS Mentoring", "Evanston", "February 20th", "Come be a role model for Evanston kids")
-                    ]
+                    ];
 
-    
+
+class Filters
