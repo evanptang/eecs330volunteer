@@ -10,6 +10,16 @@ body {
 .title {
   display: inline-block;
   text-align: center;
+  width: 25%;
+  font-size: 20;
+  color: blue;
+  font-style: normal;
+
+}
+.ident {
+  display: inline-block;
+  text-align: center;
+  width: 75%;
   font-size: 20;
   color: blue;
   font-style: normal;
@@ -20,11 +30,23 @@ body {
   text-align: center;
   font-size: 50;
   color: blue;
-  width: 75%;
+  width: 100%;
   font-style: normal;
 
 }
 
+.button1 {
+  display: inline-block;
+  text-align: center;
+  font-size: 20;
+  color: blue;
+  width: 100%;
+  font-style: normal;
+
+}
+.vol_pic {
+  text-align: center;
+}
 /*Begin Search Input */
 .button {
   display: inline-block;
