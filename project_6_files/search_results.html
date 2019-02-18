@@ -11,24 +11,30 @@
           <a href="contact.html">Contact</a>
         </div>
     <!-- Search Button and Input -->
-    <div class="wrap">
-      <div class="search">
+    <div class="searchwrap">
         <input type="text" class="searchTerm" placeholder="What are you looking for?">
-        <button type="submit" class="button"class="button" style="vertical-align:middle"> <span>Search</span>
+        <input class="zip" name="zip" type="text" pattern="[0-9]*"placeholder="Zipcode"> <br>
+        <button type="submit" class="searchbtn" style="vertical-align:middle"> <span>Search</span>
           <i class="fa fa-search"></i>
-        </button>
-      </div>
-    <!-- Filters -->
-    <div class="dropdown">
-      <button class="dropbtn">Interest</button>
-      <div class="dropdown-content">
-        <a href="#">Outdoors</a>
-        <a href="#">Animals</a>
-        <a href="#">Group</a>
-      </div>
+        </button>   
     </div>
     </div>
     <br>
+    <!-- Filters -->
+    <div class ="filters">
+      
+      <div class="dropdown">
+        <p>Filters</p>
+        <button class="dropbtn">Interest</button>
+        <div class="dropdown-content">
+          <a href="#">Outdoors</a>
+          <a href="#">Animals</a>
+          <a href="#">Group</a>
+        </div>
+      </div>
+    </div>
+    <div style="margin-left:15%;padding:1px 16px;height:1000px;">
+
 
     <!-- Results -->
     
@@ -43,6 +49,8 @@
         <p class="event-date">February 30th, 2018</p>
         <p class="event-time">8:00AM-3:00PM</p>
       </div>
+      </div>
+
       
       <!-- Event 2 -->
       <div class = "event">
@@ -55,7 +63,7 @@
           <p class="event-date">February 30th, 2018</p>
           <p class="event-time">8:00AM-3:00PM</p>
         </div>
-        
+        </div>
       <!-- Event 3 -->
       <div class = "event">
         <div class = "event-image">
@@ -67,7 +75,7 @@
           <p class="event-date">February 30th, 2018</p>
           <p class="event-time">8:00AM-3:00PM</p>
         </div>
-        
+      </div>
       <!-- Event 4 -->
       <div class = "event">
         <div class = "event-image">
@@ -79,7 +87,8 @@
           <p class="event-date">February 30th, 2018</p>
           <p class="event-time">8:00AM-3:00PM</p>
         </div>
-        
+      </div>
+    
       <!-- Page Choice -->
       <div class="pagination">
         <a href="#">&laquo;</a>
@@ -91,6 +100,7 @@
         <a href="#">6</a>
         <a href="#">&raquo;</a>
       </div>
+    </div>
   </body>
     
 

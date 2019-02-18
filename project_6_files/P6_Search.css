@@ -8,6 +8,7 @@ body {
 .pagination {
   display: inline-block;
   align-content: center;
+  width: 100%;
 }
 
 .pagination a {
@@ -36,7 +37,17 @@ body {
 }
 
 /*Begin Search Input */
-.button {
+.searchwrap{
+  width: 100%;
+  position: -webkit-sticky;
+  position: fixed;
+  top: 0%;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+  left: 15%;
+}
+.searchbtn {
   display: inline-block;
   border-radius: 4px;
   background-color: #f4511e;
@@ -51,14 +62,14 @@ body {
   margin: 5px;
 }
 
-.button span {
+.searchbtn span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button span:after {
+.searchbtn span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -67,23 +78,18 @@ body {
   transition: 0.5s;
 }
 
-.button:hover span {
+.searchbtn:hover span {
   padding-right: 25px;
 }
 
-.button:hover span:after {
+.searchbtn:hover span:after {
   opacity: 1;
   right: 0;
 }
 
-.search {
-  width: 100%;
-  position: relative;
-}
-
 .searchTerm {
   float: left;
-  width: 70%;
+  width: 50%;
   border: 3px solid #00B4CC;
   padding: 5px;
   height: 36px;
@@ -97,8 +103,23 @@ body {
   color: #00B4CC;
 }
 
+.zip{
+  
+  width: 25%;
+  border: 3px solid #00B4CC;
+  padding: 10px;
+  height: 36px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+  font-size: 20px;
+}
+
+.zip:focus{
+  color: #00B4CC;
+}
 .searchButton {
-  /*position: absolute;*/
+  display: block;
   width: 40px;
   height: 36px;
   border: 1px solid #00B4CC;
@@ -110,22 +131,26 @@ body {
   font-size: 20px;
 }
 
-/*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0%;
-  padding: 5px;
-  background-color: #cae8ca;
-  border: 2px solid #4CAF50;
-  left: 25%;
-}
 /*End Search Input */
 
 /* Begin Filter dropdowns */
+.filters {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #9DBFAF;
+  position: sticky;
+  height: 100%;
+  overflow: auto;
+  
+  font: 20px;
+ 
+}
+
 .dropbtn {
     background-color: #4CAF50;
+    
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -136,6 +161,7 @@ body {
 .dropdown{
     position: relative;
     display: inline-block;
+    width: 100%;
 }
 
 .dropdown-content{
@@ -172,13 +198,19 @@ body {
 /* Begin Search Results */
 .event{
   border-style: solid;
-  border-bottom-color: #4CAF50;
+  border-color: #4CAF50;
   border-width: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  max-width: 100%;
 }
 .event-image img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5px;
   max-width: 50%;
   height: auto;
 
