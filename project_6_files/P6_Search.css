@@ -1,9 +1,12 @@
+/*Begin Page Styling */
 body {
     background-color: #FF9800;
     color: #fff;
     margin: 0;
 }
+/* End Page Styling */
 
+/*Begin Search Input */
 .searchbutton{
 
 }
@@ -11,7 +14,9 @@ body {
 .input{
 
 }
+/*End Search Input */
 
+/* Begin Filter dropdowns */
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -54,7 +59,13 @@ body {
     background-color: #3e8e41;
 }
 
+/* End Filter drop downs */
+
+
+/* Begin Search Results */
 .event{
 
 }
+
+/* End Search Results */
 
