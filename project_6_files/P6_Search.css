@@ -3,8 +3,18 @@ body {
     background-color: #FF9800;
     color: #fff;
     margin: 0;
+    font-family: Avenir, sans-serif;
 }
 /* End Page Styling */
+
+.title {
+  display: inline-block;
+  text-align: center;
+  font-size: 20;
+  color: blue;
+  font-style: normal;
+
+}
 
 /*Begin Search Input */
 .button {
@@ -67,7 +77,7 @@ body {
 }
 
 .searchButton {
-  position: absolute;  
+  position: absolute;
   right: -50px;
   width: 40px;
   height: 36px;
@@ -142,4 +152,3 @@ body {
 }
 
 /* End Search Results */
-
