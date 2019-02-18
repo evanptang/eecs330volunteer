@@ -2,6 +2,9 @@
     padding-top: 30px;
 }
 
+.row {
+	border-style: solid;
+}
 .product {
     margin-bottom: 30px;
 }
