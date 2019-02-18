@@ -153,5 +153,12 @@ body {
 .event{
 
 }
+.event_image img{
+    height: 130px;
+    width: 130px;
+    }
+.event_details{
+    
+ }
 
 /* End Search Results */
