@@ -11,8 +11,15 @@
     </div>
     <div class = "title"> Welcome Volunteer</div>
     <div class = "subtitle"> Please enter your ZIP Code </div>
-    <div class="searchbar">
-      <input type="text" placeholder="Search..">
+    <div class="searchwrap-intial">
+        <input type="text" class="searchTerm" placeholder="What are you looking for?">
+        <input class="zip" name="zip" type="text" pattern="[0-9]*"placeholder="Zipcode"> <br>
+        <a href="search_results.html">
+        <button type="submit" class="searchbtn" style="vertical-align:middle"> <span>Search</span>
+          <i class="fa fa-search"></i>
+        </button>
+        </a> 
+    </div>
     </div>
   </body>
 </html>

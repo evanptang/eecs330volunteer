@@ -10,7 +10,20 @@ body {
 .title {
   display: inline-block;
   text-align: center;
+<<<<<<< HEAD
   width: 70%;
+=======
+  width: 25%;
+  font-size: 20;
+  color: blue;
+  font-style: normal;
+
+}
+.ident {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+>>>>>>> 6d13bbb287e464187a6daa3038f3857a564f00ff
   font-size: 20;
   color: blue;
   font-style: normal;
