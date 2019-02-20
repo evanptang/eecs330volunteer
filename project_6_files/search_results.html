@@ -1,6 +1,7 @@
 <html>
   <head>
       <title>Search Results</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="P6_search.css"/>
   </head>
   <body>
@@ -33,18 +34,43 @@
         <p>Filters</p>
         <button class="dropbtn">Interest</button>
         <div class="dropdown-content">
-          <a href="#">Outdoors</a>
-          <a href="#">Animals</a>
-          <a href="#">Group</a>
+        <div id="checkboxes">
+          <label for="outdoors">
+          <input type="checkbox" id="outdoors" onclick="updateInterests('outdoors')" />Outdoors</label>
+          <label for="animals">
+          <input type="checkbox" id="animals" onclick="updateInterests('animals')"/>Animals</label>
         </div>
       </div>
     </div>
-    <div style="margin-left:15%;padding:1px 16px;height:1000px;">
+      <div class="dropdown">
+        <button class="dropbtn">More Filters</button>
+        <div class="dropdown-content">
+        <div id="checkboxes">
+          <label for="groups">
+          <input type="checkbox" id="groups" onclick="updateMoreFilters('groups')" />Allows Groups</label>
+          <label for="family">
+          <input type="checkbox" id="family" onclick="updateMoreFilters('family')"/>Family Friendly</label>
+          <label for="accessible">
+          <input type="checkbox" id="accessible" onclick="updateMoreFilters('accessible')"/>Wheelchair Accessible</label>
+        </div>
+      </div>
+    </div>
+        <!--
+          <a href="#">Outdoors</a>
+          <a href="#">Animals</a>
+          <a href="#">Group</a>
+        -->
+    </br>
+      <button type="submit" class="filterbtn" onclick="updateFilter()""> <span>Filter</span></button>  
+    </div>
+
+    <div style="margin-left:15%;padding:1px 16px;height:500px;">
 
 
     <!-- Results -->
     
     <!-- Event 1 -->
+    <div class="event-wrapper" id="habitat">
     <div class = "event">
       <div class = "event-image">
         <img src="images/habitat-for-humanity.jpg" alt="event1">
@@ -56,44 +82,39 @@
         <p class="event-time">8:00AM-3:00PM</p>
       </div>
       </div>
+    </div>
 
       
       <!-- Event 2 -->
+      <div class="event-wrapper" id="shelter">
       <div class = "event">
         <div class = "event-image">
           <img src="images/habitat-for-humanity.jpg" alt="event1">
         </div>
         <div class = "event-details">
-          <p class="event-name"><b> Build a House</b></p>
+          <p class="event-name"><b> Animals</b></p>
           <p class="event-host"><i>habitat-for-humanity</i></p>
           <p class="event-date">February 30th, 2018</p>
           <p class="event-time">8:00AM-3:00PM</p>
         </div>
         </div>
+      </div>
       <!-- Event 3 -->
+      <div class="event-wrapper" id="cps">
       <div class = "event">
         <div class = "event-image">
           <img src="images/event3.jpg" alt="event3">
         </div>
         <div class = "event-details">
-          <p class="event-name"><b>Event 3</b></p>
+          <p class="event-name"><b>Chicago Public School</b></p>
           <p class="event-host"><i>Host 3</i></p>
           <p class="event-date">February 30th, 2018</p>
           <p class="event-time">8:00AM-3:00PM</p>
         </div>
       </div>
+    </div>
       <!-- Event 4 -->
-      <div class = "event">
-        <div class = "event-image">
-          <img src="images/habitat-for-humanity.jpg" alt="event4">
-        </div>
-        <div class = "event-details">
-          <p class="event-name"><b> Build a House</b></p>
-          <p class="event-host"><i>habitat-for-humanity</i></p>
-          <p class="event-date">February 30th, 2018</p>
-          <p class="event-time">8:00AM-3:00PM</p>
-        </div>
-      </div>
+
     
       <!-- Page Choice -->
       <div class="pagination">
@@ -108,6 +129,6 @@
       </div>
     </div>
   </body>
-    
+  <script src="search_results.js"></script>
 
 </html>

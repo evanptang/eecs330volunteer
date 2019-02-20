@@ -19,7 +19,7 @@ body {
 .ident {
   display: inline-block;
   text-align: center;
-  width: 75%;
+  width: 100%;
   font-size: 20;
   color: blue;
   font-style: normal;
