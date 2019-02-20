@@ -10,11 +10,8 @@ body {
 .title {
   display: inline-block;
   text-align: center;
-<<<<<<< HEAD
-  width: 70%;
-=======
-  width: 25%;
-  font-size: 20;
+  width: 100%;
+  font-size: 40;
   color: blue;
   font-style: normal;
 
@@ -23,7 +20,6 @@ body {
   display: inline-block;
   text-align: center;
   width: 100%;
->>>>>>> 6d13bbb287e464187a6daa3038f3857a564f00ff
   font-size: 20;
   color: blue;
   font-style: normal;
@@ -32,39 +28,32 @@ body {
 .org_name {
   display: inline-block;
   text-align: center;
-  font-size: 50;
+  font-size: 70;
   color: blue;
+  font-style: normal;
   width: 100%;
-  font-style: normal;
+  font-weight: bold;
 
 }
 
-.button1 {
-  display: inline-block;
-  background-color: white;
-  text-align: center;
-  font-size: 30;
-  float: left;
-  color: blue;
-  display: inline-block;
-  width: 30%;
-  font-style: normal;
-  padding: 15px 32px;
-  border: none;
+#table_button {
+  width: 70%;
+  height: 34px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
-.button2 {
-  display: inline-block;
-  background-color: white;
-  text-align: center;
-  font-size: 530;
-  color: blue;
-  float: right;
-  display: inline-block;
-  width: 30%;
-  padding: 15px 32px;
-  font-style: normal;
+.button_look {
   border: none;
+  font-size: 30px;
+  background-color: #f4511e;
+  display: inline-block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  margin: 5px;
+  width: 70%;
 }
 .vol_pic {
   text-align: center;
@@ -129,23 +118,6 @@ body {
   color: #00B4CC;
 }
 
-<<<<<<< HEAD
-.searchButton {
-  position: absolute;
-  right: -50px;
-  width: 40px;
-  height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-=======
->>>>>>> 06d020f0f1def0fab040ab99b0afad0cfcca9849
 /*Resize the wrap to see the search bar change!*/
 .wrap{
   width: 30%;
