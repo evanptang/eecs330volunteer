@@ -1,7 +1,7 @@
 /*Begin Page Styling */
 body {
-    background-color: #FF9800;
-    color: #fff;
+    background-color: #00569E ;    /*#FF9800*/
+    color: #fff; 
     margin: 0;
     font-family: Avenir, sans-serif;
 }
@@ -12,7 +12,7 @@ body {
   text-align: center;
   width: 100%;
   font-size: 40;
-  color: blue;
+  color: white;
   font-style: normal;
 
 }
@@ -21,7 +21,7 @@ body {
   text-align: center;
   width: 100%;
   font-size: 20;
-  color: blue;
+  color: white;
   font-style: normal;
 
 }
@@ -29,7 +29,7 @@ body {
   display: inline-block;
   text-align: center;
   font-size: 70;
-  color: blue;
+  color: white;
   font-style: normal;
   width: 100%;
   font-weight: bold;
@@ -37,16 +37,17 @@ body {
 }
 
 #table_button {
+  float:left;
   width: 70%;
   height: 34px;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 220px;
+  margin-right: 250px;
 }
 
 .button_look {
   border: none;
   font-size: 30px;
-  background-color: #f4511e;
+  background-color: #FF9800;
   display: inline-block;
   color: #FFFFFF;
   text-align: center;

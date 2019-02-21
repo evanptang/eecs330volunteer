@@ -1,6 +1,6 @@
 /*Begin Page Styling */
 body {
-    background-color: #FF9800;
+    background-color: #00569E;
     color: #fff;
     margin: 0;
     font-family: Avenir, sans-serif;
@@ -28,10 +28,10 @@ body {
 /* End Page Styling */
 
 .title {
-  display: inline-block;
+  position: float;
   text-align: center;
-  font-size: 20;
-  color: blue;
+  font-size: 32;
+  color: white;
   font-style: normal;
 
 }
@@ -47,19 +47,20 @@ body {
   position: fixed;
   top: 40%;
   padding: 5px;
-  background-color: #cae8ca;
-  border: 2px solid #4CAF50;
+  background-color: #e8e8e8;
+  border: 2px solid #00B4CC;
   margin-left: 12.5%;
 }
 .searchwrap{
   width: 100%;
   position: -webkit-sticky;
-  position: fixed;
-  top: 0%;
-  padding: 5px;
-  background-color: #cae8ca;
-  border: 2px solid #4CAF50;
-  left: 15%;
+  position:fixed;
+  top: 50px;
+  padding: 10px;
+  padding-left: 40px;
+  background-color: #e8e8e8;
+  border: 2px solid #00B4CC;
+  left: 0%;
 }
 .searchbtn {
   display: inline-block;
@@ -105,7 +106,7 @@ body {
   float: left;
   width: 50%;
   border: 3px solid #00B4CC;
-  padding: 5px;
+  padding: 10px;
   height: 36px;
   border-radius: 5px;
   outline: none;
@@ -133,7 +134,7 @@ body {
   color: #00B4CC;
 }
 .searchButton {
-  display: block;
+  display: inline-block;
   width: 40px;
   height: 36px;
   border: 1px solid #00B4CC;
@@ -148,14 +149,18 @@ body {
 /*End Search Input */
 
 /* Begin Filter dropdowns */
+
+.filter-text {
+  color: #000000;
+}
 .filters {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 15%;
+  width: 0%;
   background-color: #9DBFAF;
   position: fixed;
-  height: 100%;
+  height: 40;
   overflow: auto;
   font: 20px;
  
@@ -163,18 +168,21 @@ body {
 
 .dropbtn {
     background-color: #4CAF50;
-    
     color: white;
-    padding: 16px;
+    padding: 10px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    width: 100%
+    width: 250px;
+    display: inline-block;
 }
 
 .dropdown{
-    position: relative;
-    width: 100%;
+    /*position: relative;*/
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    /*width: 40%;*/
 }
 
 .dropdown-content{
@@ -184,7 +192,7 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    width: 100%
+    width: 250px;
 }
 
 .dropdown-content label {
@@ -207,18 +215,18 @@ body {
 }
 
 .filterbtn {
-  display: relative;
-  width: 80%;
+  width: 200px;
   border-radius: 4px;
   background-color: #f4511e;
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px 10px 5px 5px;
+  margin: 10px 20px 10px 20px;
+  display:inline-block;
 }
 
 /* End Filter drop downs */
@@ -230,44 +238,62 @@ body {
 
 .event-wrapper{
   display:block;
+  padding: 10px 100px 10px 100px;
+  color: #F5F5F5;
 }
+
 .event{
   border-style: solid;
-  border-color: #4CAF50;
+  border-color: #9EB3C2;
   border-width: 5px;
+  background-color: #F5F5F5;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
   margin-bottom: 5px;
   max-width: 100%;
+  display: grid;
+  grid-template-columns: 30% 65%;
+  justify-content: space-evenly;
+  align-content: center;
+  grid-gap: 10px 10px;
+  padding:5px 5px 5px 5px;
 }
 .event-image img {
-  display: block;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
-  max-width: 50%;
+  width: 200px;
   height: 200px;
 
 }
 .event-details{
-  text-align: center; 
+  padding-top: 10px;
+  text-align: left; 
+  color: #000000;
 }
 .event-name{
   font-size: 18px;
   margin: 5px;
   padding: 0;
+  color: #000000;
 }
 .event-host{
   font-size: 12px;
   margin: 5px;
   padding: 0;
+  color: #000000;
  }
  .event-date{
   font-size: 12px;
+  margin: 5px;
+  color: #000000;
  }
  .event-time{
   font-size: 12px;
+  margin: 5px;
+  color: #000000;
  }
   
 

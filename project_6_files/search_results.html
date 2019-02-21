@@ -5,9 +5,22 @@
       <link rel="stylesheet" type="text/css" href="P6_search.css"/>
   </head>
   <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #2a2a2b;">
+  <a class="navbar-brand" href="#">Volunteer Connect</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="main_page.html">Home</a>
+      <a class="nav-item nav-link" href="#about">About</a>
+      <a class="nav-item nav-link disabled" href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
     
     <!--Nav Bar-->
-      <div class="topnav">
+      <!--<div class="topnav">
           <a class="active" href="main_page.html">
           <div class = "logo">
               <img src="images/Hands-Heart.png" alt="logo">
@@ -17,22 +30,18 @@
           <a href="#about">About</a>
           <a href="contact.html">Contact</a>
         </div>
+      -->
     <!-- Search Button and Input -->
     <div class="searchwrap">
         <input type="text" class="searchTerm" placeholder="What are you looking for?">
         <input class="zip" name="zip" type="text" pattern="[0-9]*"placeholder="Zipcode"> <br>
-        <button type="submit" class="searchbtn" style="vertical-align:middle"> <span>Search</span>
-          <i class="fa fa-search"></i>
+        <!--<button type="submit" class="searchbtn" style="vertical-align:middle"> <span>Search</span>
+          <i class="fa fa-search"></i>-->
         </button>   
-    </div>
-    </div>
-    <br>
     <!-- Filters -->
-    <div class ="filters">
-      
+      <!--<div class="filter-text">Filter by</div>-->
       <div class="dropdown">
-        <p>Filters</p>
-        <button class="dropbtn">Interest</button>
+        <button class="dropbtn">Filter by Interest</button>
         <div class="dropdown-content">
         <div id="checkboxes">
           <label for="outdoors">
@@ -47,7 +56,7 @@
       </div>
     </div>
       <div class="dropdown">
-        <button class="dropbtn">More Filters</button>
+        <button class="dropbtn">Additional Filters</button>
         <div class="dropdown-content">
         <div id="checkboxes">
           <label for="groups">
@@ -64,13 +73,19 @@
           <a href="#">Animals</a>
           <a href="#">Group</a>
         -->
-    </br>
-      <button type="submit" class="filterbtn" onclick="updateFilter()""> <span>Filter</span></button>  
+      <button type="submit" class="filterbtn" onclick="updateFilter()""> <span>Apply Filters</span></button>  
+    </div>
     </div>
 
-    <div style="margin-left:15%;padding:1px 16px;height:500px;">
+    <!--<div style="margin-left:15%;padding:1px 16px;height:500px;">-->
 
-
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
     <!-- Results -->
     
     <!-- Event 1 -->
