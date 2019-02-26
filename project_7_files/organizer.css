@@ -1,0 +1,19 @@
+body {
+    background-color: #00569E;
+    color: #fff;
+    margin: 0;
+    font-family: Avenir, sans-serif;
+}
+
+.title {
+  position: float;
+  text-align: center;
+  font-size: 32;
+  color: white;
+  font-style: normal;
+
+}
+.logo img{
+  height: 60px;
+  width: 60px;
+}
