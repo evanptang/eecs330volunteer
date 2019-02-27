@@ -18,26 +18,21 @@
     </div>
   </div>
 </nav>
-    
-    <!--Nav Bar-->
-      <!--<div class="topnav">
-          <a class="active" href="main_page.html">
-          <div class = "logo">
-              <img src="images/Hands-Heart.png" alt="logo">
-            </div>
-          </a>
-          <a class="active" href="main_page.html">Home</a>
-          <a href="#about">About</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      -->
     <!-- Search Button and Input -->
     <div class="searchwrap">
-        <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button class="collapsible">Advanced Search &#43;</button>
+        <div class="content">
+        <div class="searchtext">Keyword (optional):</div>
+        <input type="text" class="searchTerm" placeholder="e.g.'Hospital','Animal Shelter'">
+         <div class="searchtext">Start Date:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;End Date:</div>
+        <input type="text" class="searchDate" placeholder="01/01/18">
+        <input type="text" class="searchDate" placeholder="12//31/18">  
+        </div>  
+       <!-- <input type="text" class="searchTerm" placeholder="What are you looking for?">
         <input class="zip" name="zip" type="text" pattern="[0-9]*"placeholder="Zipcode"> <br>
-        <!--<button type="submit" class="searchbtn" style="vertical-align:middle"> <span>Search</span>
-          <i class="fa fa-search"></i>-->
-        </button>   
+        <button type="submit" class="searchbtn" style="vertical-align:middle"> <span>Search</span>
+          <i class="fa fa-search"></i>
+        </button>-->  
     <!-- Filters -->
       <!--<div class="filter-text">Filter by</div>-->
       <div class="dropdown">
@@ -45,13 +40,13 @@
         <div class="dropdown-content">
         <div id="checkboxes">
           <label for="outdoors">
-          <input type="checkbox" id="outdoors" onclick="updateInterests('outdoors')" />Outdoors</label>
+          <input type="checkbox" id="outdoors" onclick="updateInterests('outdoors')" checked />Outdoors</label>
           <label for="animals">
-          <input type="checkbox" id="animals" onclick="updateInterests('animals')"/>Animals</label>
+          <input type="checkbox" id="animals" onclick="updateInterests('animals')" checked />Animals</label>
           <label for="education">
-          <input type="checkbox" id="education" onclick="updateInterests('education')" />Education</label>
+          <input type="checkbox" id="education" onclick="updateInterests('education')" checked />Education</label>
           <label for="healthcare">
-          <input type="checkbox" id="healthcare" onclick="updateInterests('healthcare')"/>Healthcare</label>
+          <input type="checkbox" id="healthcare" onclick="updateInterests('healthcare')" checked />Healthcare</label>
         </div>
       </div>
     </div>
@@ -73,7 +68,7 @@
           <a href="#">Animals</a>
           <a href="#">Group</a>
         -->
-      <button type="submit" class="filterbtn" onclick="updateFilter()""> <span>Apply Filters</span></button>  
+      <button type="submit" class="filterbtn" onclick="updateFilter()""> <span>Update Search</span></button>  
     </div>
     </div>
 
@@ -86,6 +81,9 @@
     </br>
     </br>
     </br>
+    </br>
+    </br>
+
     <!-- Results -->
     
     <!-- Event 1 -->

@@ -36,25 +36,24 @@ body {
 
 }
 
-#table_button {
-  float:left;
-  width: 70%;
-  height: 34px;
-  margin-left: 220px;
-  margin-right: 250px;
+#button-grid {
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  grid-row-gap: 10px;
 }
 
 .button_look {
   border: none;
   font-size: 30px;
   background-color: #FF9800;
-  display: inline-block;
   color: #FFFFFF;
   text-align: center;
   padding: 20px;
   cursor: pointer;
-  margin: 5px;
-  width: 70%;
+  width: 100%;
 }
 .vol_pic {
   text-align: center;
@@ -98,6 +97,7 @@ body {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
 
 .search {
   width: 100%;
@@ -117,6 +117,19 @@ body {
 
 .searchTerm:focus{
   color: #00B4CC;
+}
+
+.searchDate {
+  float: left;
+  width: 20%;
+  border: 3px solid #00B4CC;
+  padding: 10px;
+  margin: 10px;
+  height: 36px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+  font-size: 20px;
 }
 
 /*Resize the wrap to see the search bar change!*/

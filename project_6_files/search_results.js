@@ -6,8 +6,11 @@ results["cps"] = ['education','family','groups'];
 results["redcross"] = ['healthcare','accessible'];
 results["library"] = ['education','accessible'];
 results["symphony"] = ['healthcare','groups'];
-var interests = [];
+var interests = ['outdoors','animals','education','healthcare'];
 var morefilters = [];
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
 
 function updateInterests(clickedItem) {
@@ -52,4 +55,16 @@ for(var key in results) {
     }
 
   }
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
 
