@@ -68,6 +68,7 @@ body {
   top: 50px;
   padding: 10px;
   padding-left: 40px;
+  padding-right: 40px;
   background-color: #e8e8e8;
   border: 2px solid #00B4CC;
   left: 0%;
@@ -287,6 +288,31 @@ body {
   display:inline-block;
 }
 
+.filterbtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.filterbtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.filterbtn:hover span {
+  padding-right: 25px;
+}
+
+.filterbtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 /* End Filter drop downs */
 
 
@@ -296,7 +322,7 @@ body {
 
 .event-wrapper{
   display:block;
-  padding: 10px 100px 10px 100px;
+  padding: 10px 150px 10px 150px;
   color: #F5F5F5;
 }
 
@@ -332,24 +358,30 @@ body {
   color: #000000;
 }
 .event-name{
-  font-size: 18px;
+  font-size: 22px;
   margin: 5px;
   padding: 0;
   color: #000000;
 }
 .event-host{
-  font-size: 12px;
+  font-size: 16px;
   margin: 5px;
   padding: 0;
   color: #000000;
  }
  .event-date{
-  font-size: 12px;
+  font-size: 14px;
   margin: 5px;
   color: #000000;
  }
  .event-time{
-  font-size: 12px;
+  font-size: 14px;
+  margin: 5px;
+  color: #000000;
+ }
+
+  .info{
+  font-size: 14px;
   margin: 5px;
   color: #000000;
  }
