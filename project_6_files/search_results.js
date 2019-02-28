@@ -2,10 +2,10 @@ var results = {};
 results["habitat"] = ['outdoors','groups','family'];
 results["ev_shelter"] = ['animals','groups'];
 results["paws"] = ['animals','groups','family'];
-results["cps"] = ['education','family','groups'];
-results["redcross"] = ['healthcare','accessible'];
+results["cps"] = ['education','family','groups','accessible'];
+results["redcross"] = ['healthcare'];
 results["library"] = ['education','accessible'];
-results["symphony"] = ['healthcare','groups'];
+results["symphony"] = ['healthcare','groups','accessible'];
 var interests = ['outdoors','animals','education','healthcare'];
 var morefilters = [];
 
