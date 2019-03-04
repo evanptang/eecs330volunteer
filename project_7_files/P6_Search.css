@@ -180,7 +180,7 @@ body {
 /*End Search Input */
 
 /*Begin Advanced Search Dropdown*/
-.collapsible {
+.collapsible-initial {
   background-color: #777;
   color: white;
   cursor: pointer;
@@ -193,6 +193,20 @@ body {
   font-size: 15px;
 }
 
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  margin:10px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-left: 116px;
+}
+
 .active, .collapsible:hover {
   background-color: #555;
 }
@@ -200,6 +214,14 @@ body {
 .content {
   margin: 0px;
   display: none;
+  max-width: 90%;
+  overflow: hidden;
+}
+
+.content-results {
+  margin-left: 120px;
+  display: none;
+  max-width: 90%;
   overflow: hidden;
 }
 
@@ -208,6 +230,20 @@ body {
 
 
 /* Begin Filter dropdowns */
+
+
+.btn-grid{
+  margin-left: 100px;
+  margin-right: auto;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  justify-content: space-evenly;
+  align-content: center;
+  grid-gap: 10px 10px;
+  padding:5px 5px 5px 5px;
+
+}
 
 .filter-text {
   color: #000000;
@@ -239,8 +275,10 @@ body {
 .dropdown{
     /*position: relative;*/
     float: left;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-top: 10px;
+    /*margin-left: 120px;
+    margin-right: 25px;*/
     /*width: 40%;*/
 }
 
@@ -284,7 +322,7 @@ body {
   padding: 10px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 10px 20px 10px 20px;
+  margin: 10px 0px 10px 0px;
   display:inline-block;
 }
 
@@ -322,7 +360,7 @@ body {
 
 .event-wrapper{
   display:block;
-  padding: 10px 150px 10px 150px;
+  padding: 10px 180px 10px 180px;
   color: #F5F5F5;
 }
 
@@ -337,11 +375,27 @@ body {
   margin-bottom: 5px;
   max-width: 100%;
   display: grid;
-  grid-template-columns: 30% 65%;
+  grid-template-columns: 22% 42% 30%;
   justify-content: space-evenly;
   align-content: center;
   grid-gap: 10px 10px;
   padding:5px 5px 5px 5px;
+}
+
+.eventbtn {
+  width: 200px;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 70px;
+  margin-top: 100px;
+  display:inline-block;
 }
 .event-image img {
   display: inline-block;
@@ -355,6 +409,7 @@ body {
 .event-details{
   padding-top: 10px;
   text-align: left; 
+  width:100%;
   color: #000000;
 }
 .event-name{
@@ -385,6 +440,13 @@ body {
   margin: 5px;
   color: #000000;
  }
+ .event-distance{
+  padding-top: 18px;
+  margin-right: 32px;
+  text-align: right; 
+  width:100%;
+  color: #000000;
+}
   
 
 /* End Search Results */

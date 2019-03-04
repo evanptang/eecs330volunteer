@@ -194,3 +194,33 @@ body {
 }
 
 /* End Search Results */
+
+.profilebtn {
+  width: 200px;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px 10px 10px 800px;
+  display:inline-block; 
+}
+
+.logoutbtn {
+  width: 200px;
+  border-radius: 4px;
+  background-color: #FF9800;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px 20px 10px 10px;
+  display:inline-block;
+}
