@@ -17,8 +17,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="main_page.html">Home</a>
-                <a class="nav-item nav-link" href="#about">About</a>
-                <a class="nav-item nav-link disabled" href="contact.html">Contact</a>
+                <a class="nav-item nav-link" href="#about">About</a
             </div>
         </div>
     </nav>
@@ -31,50 +30,38 @@
     <div class="container">
         <h2>Opportunity Sign Up</h2>
         <br>
-        <form class="form-horizontal" action="main_page.html">
+        <form class="form-horizontal" action="search_results.html">
             <div class="form-group">
-                <label for="inputAddress">Organization:</label>
-                <input class="form-control" type="text" placeholder="Habitat for Humanity" readonly>
+                <label for="inputAddress">First Name:</label>
+                <input class="form-control" type="text" placeholder="Enter First Name">
                     </div>
-            
+
             <div class="form-group">
-                <label for="inputAddress">Opportunity:</label>
-                <input class="form-control" type="text" placeholder="Building Houses in Evanston Community" readonly>
-                    </div>
-            
+                <label for="inputAddress">Last Name:</label>
+                <input class="form-control" type="text" placeholder="Enter Last Name">
+            </div>
+
             <div class="form-group">
-                <label for="inputAddress">Location:</label>
-                <input class="form-control" type="text" placeholder="123 Main Street, Evanston, IL 60201" readonly>
+                <label for="inputAddress">Email:</label>
+                <input class="form-control" type="text" placeholder="Enter Email Address">
                     </div>
             <div class="form-row">
                 <div class="form-group col-md-4">
-                    <label for="exampleFormControlTextarea1">Event Date:</label>
-                 <input class="form-control" type="text" placeholder="02/30/2018" readonly>
-                    </div>
-                <div class="form-group col-md-2">
-                    <label for="exampleFormControlTextarea1">
-                        Start Time:</label>
-                    <input class="form-control" type="text" placeholder="8:00am" readonly>
-                        </div>
-                <div class="form-group col-md-2">
-                    <label for="exampleFormControlTextarea1">
-                        End Time:</label>
-                    <input class="form-control" type="text" placeholder="3:00pm" readonly>
-                        </div>
-                </div>
-                       <br>
-                    <div id="checkboxes">
-                        <label for="outdoors">
-                            <input type="checkbox" id="outdoors"  unchecked />  I can make it to this event</label>
-                        </div>
-                    
-                    <div class="modal-body">
-                        <div class="col-auto">
-                            <label for="inputPassword2" class="sr-only">Password</label>
-                            <input type="password" class="form-control" id="inputPassword2"
-                                placeholder="Password">
-                                </div>
-                    </div>
-                    <div class="modal-footer">
-                        <a href = "habitat_details.html" class="btn btn-secondary" data-dismiss="modal">Go Back</button>
-                        <a href="v_search.html" class="btn btn-primary"> Sign Up</a>
+                    <label for="exampleFormControlTextarea1">Phone Number:</label>
+                 <input class="form-control" type="number" placeholder="Enter Phone Number">
+               </div>
+            </div>
+            <div class="modal-footer">
+                <a href = "habitat_details.html" class="btn btn-secondary" data-dismiss="modal">Go Back</button>
+                <a href="search_results.html" class="btn btn-primary" onclick="myFunction()"> Sign Up</a>
+            </div>
+        </form>
+  </div>
+  <script>
+  function myFunction(){
+    alert('Thanks for your registration! Directing you back to the search results');
+    window.location.href="search_results.html";
+  }
+  </script>
+</body>
+</html>
