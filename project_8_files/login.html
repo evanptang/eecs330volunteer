@@ -27,23 +27,27 @@
 <br>
 <div class="container">
   <h2>Login</h2>
-  <form>
+  <form id="login" action="login.html" oninput='pwd.setCustomValidity(pwd.value.length < 8 ? "Password must be at least 8 characters." : "")' onsubmit= "return login()">
       <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter email">
+          <label for="emailinput">Email:</label>
+          <input type="email" class="form-control" id="emailinput" placeholder="Enter email">
       </div>
       <div class="form-group">
           <label for="pwd">Password:</label>
-          <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
       </div>
       <div class="checkbox">
           <label><input type="checkbox"> Remember me</label>
       </div>
-          <a href="profile.html" type="submit" class="btn btn-default">Login </a>
-
-
-  </form>
+          <button>Login</button>
+ </form>
 </div>
-
+<script>
+      function login() {
+          /*var input = document.getElementById("emailinput").value;
+          if ((input.indexOf('@') > -1) && (input.charAt(input.length - 1) != '@')){*/
+              document.getElementById("login").action = "profile.html";
+    }
+</script>
 </body>
 </html>
