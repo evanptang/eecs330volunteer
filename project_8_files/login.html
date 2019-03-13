@@ -1,4 +1,3 @@
-
 <html>
 <head>
     <title>Volunteer Connect: Login</title>
@@ -27,23 +26,46 @@
 <br>
 <div class="container">
   <h2>Login</h2>
-  <form>
+  <form id="login" action="login.html" oninput='pwd.setCustomValidity(pwd.value.length < 8 ? "Password must be at least 8 characters." : "")' onsubmit= "return email()">
       <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter email">
+          <label for="emailinput">Email:</label>
+          <input type="email" class="form-control" id="emailinput" placeholder="Enter email">
       </div>
       <div class="form-group">
           <label for="pwd">Password:</label>
-          <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
       </div>
       <div class="checkbox">
           <label><input type="checkbox"> Remember me</label>
       </div>
-          <a href="profile.html" type="submit" class="btn btn-default">Login </a>
-
-
-  </form>
+          <button>Login</button>
+ </form>
 </div>
+<script>
 
+    function email() {
+      email = document.getElementById("emailinput").value;
+      pw = document.getElementById("pwd").value
+      if (email == "habitat@northwestern.edu" && pw == "password"){
+        document.getElementById("login").action = "profile_habitat.html";
+      }
+      else if (email == "blood@northwestern.edu" && pw == "gocats19"){
+        document.getElementById("login").action = "profile_blood.html";
+      }
+      else if (email == "blood@northwestern.edu" && pw != "gocats19"){
+        alert("Error: Incorrect Password");
+      }
+      else if (email == "habitat@northwestern.edu" && pw != "password"){
+        alert("Error: Incorrect Password");
+      }
+      else if(email == ""){
+        alert("Error: No email inputed");
+      }
+      else{
+        alert("Account not found. Redirecting to the sign up page")
+        document.getElementById("login").action = "org_signup.html"
+      }
+    }
+</script>
 </body>
 </html>
