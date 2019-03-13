@@ -26,7 +26,11 @@
 <br>
 <div class="container">
   <h2>Login</h2>
+<<<<<<< HEAD
   <form id="login" action="login.html" oninput='pwd.setCustomValidity(pwd.value.length < 8 ? "Password must be at least 8 characters." : "")' onsubmit= "return email()">
+=======
+  <form id="login" action="login.html" oninput='pwd.setCustomValidity(pwd.value.length < 8 ? "Password must be at least 8 characters." : "")' onsubmit= "return login()">
+>>>>>>> 8e681f12a445f4cefb3ed1f2b6ab53f369e2eff6
       <div class="form-group">
           <label for="emailinput">Email:</label>
           <input type="email" class="form-control" id="emailinput" placeholder="Enter email">
@@ -42,6 +46,7 @@
  </form>
 </div>
 <script>
+<<<<<<< HEAD
 
     function email() {
       email = document.getElementById("emailinput").value;
@@ -65,6 +70,12 @@
         alert("Account not found. Redirecting to the sign up page")
         document.getElementById("login").action = "org_signup.html"
       }
+=======
+      function login() {
+          /*var input = document.getElementById("emailinput").value;
+          if ((input.indexOf('@') > -1) && (input.charAt(input.length - 1) != '@')){*/
+              document.getElementById("login").action = "profile.html";
+>>>>>>> 8e681f12a445f4cefb3ed1f2b6ab53f369e2eff6
     }
 </script>
 </body>
