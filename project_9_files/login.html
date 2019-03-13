@@ -24,7 +24,6 @@
         <a class="nav-item nav-link" href="#about">About</a>
       </div>
     </div>
-<<<<<<< HEAD
   </div>
 </nav>
 <br>
@@ -33,17 +32,6 @@
 <div class="container">
   <h2>Login</h2>
   <form id="login" action="login.html" oninput='pwd.setCustomValidity(pwd.value.length < 8 ? "Password must be at least 8 characters." : "")' onsubmit= "return email()">
-=======
-  </nav>
-  <br>
-  <br>
-  <br>
-  <div class="container">
-    <h2>Login</h2>
-    <form id="login" action="login.html"
-      oninput='pwd.setCustomValidity(pwd.value.length < 8 ? "Password must be at least 8 characters." : "")'
-      onsubmit="return login()">
->>>>>>> 10365a951e861b2788275b048bff8bd45c14e099
       <div class="form-group">
         <label for="emailinput">Email:</label>
         <input type="email" class="form-control" id="emailinput" placeholder="Enter email">
@@ -55,7 +43,6 @@
       <div class="checkbox">
         <label><input type="checkbox"> Remember me</label>
       </div>
-<<<<<<< HEAD
           <button>Login</button>
  </form>
 </div>
@@ -83,16 +70,6 @@
         alert("Account not found. Redirecting to the sign up page")
         document.getElementById("login").action = "org_signup.html"
       }
-=======
-      <button>Login</button>
-    </form>
-  </div>
-  <script>
-    function login() {
-      /*var input = document.getElementById("emailinput").value;
-      if ((input.indexOf('@') > -1) && (input.charAt(input.length - 1) != '@')){*/
-      document.getElementById("login").action = "profile.html";
->>>>>>> 10365a951e861b2788275b048bff8bd45c14e099
     }
   </script>
 </body>
