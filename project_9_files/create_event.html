@@ -56,108 +56,141 @@
     </br>
     </br>
     </br>
-    <h1 style="text-align: center;">Create/Edit an Event</h1>
+
     <!--New Event Form-->
-    <div class="container">
-        <form>
-            <div class="form-group">
-                <label for="inputAddress">New Event By:</label>
-                <input class="form-control" type="text" placeholder="Habitat for Humanity (Chicago)" readonly>
-            </div></br>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Event Date</label>
-                <input type="date" id="date">
-            </div>
-            <div class="form-group">
-                <label for="inputAddress">Name</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Untitled Event">
-            </div>
-            <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
+    <div class="card" style="margin-left:10%; margin-right:10%; margin-bottom: ">
+        <div class="card-body">
+            <h1 style="text-align: center;">Create/Edit an Event</h1>
+            <div class="container">
+                <form>
+                    <div class="form-group">
+                        <label for="inputAddress">New Event By:</label>
+                        <input class="form-control" type="text" placeholder="Habitat for Humanity (Chicago)" readonly>
+                    </div></br>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Event Date</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Name</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Untitled Event">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
 
-            <div class="form-group">
-                <label for="inputAddress2">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Room #">
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Event Details</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <p> Check For Yes</p>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Family Friendly</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">Allows Group</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">WheelChair Accessible </label>
-            </div>
-            </br>
-            </br>
-            <div class="form-row align-items-center">
-                <a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"
-                    title="Saved Successfully!"
-                    data-content="The changes to your event have been succesfully saved!">Save Changes</a>
-                <div class="col-auto">
-                    <a href="profile.html" class="btn btn-secondary">Close</a>
-                </div>
-
-                <!-- Publish trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                    Publish Event
-                </button>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Enter Password to Publish Event</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="col-auto">
-                                    <label for="inputPassword2" class="sr-only">Password</label>
-                                    <input type="password" class="form-control" id="inputPassword2"
-                                        placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Go Back</button>
-                                <a href="profile.html" class="btn btn-primary">Publish Event</a>
+                    <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Room #">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="validationCustom03">City</label>
+                            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
                             </div>
                         </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select class="custom-select" required>
+                                <option value="">Choose...</option>
+                                <option value="1">IL</option>
+                                <option value="2">...</option>
+                            </select>
+                            <div class="invalid-feedback">Invalid State</div>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Event Details</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <p> Check For Yes</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Family Friendly</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Allows Group</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">WheelChair Accessible </label>
+                    </div>
+                    </br>
+                    </br>
+                    <div class="form-row align-items-center">
+                        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#saveModal">
+                            Save Changes
+                        </button>
+                        <div class="modal fade" id="saveModal" tabindex="-1" role="dialog"
+                            aria-labelledby="saveModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="saveModalLabel">Saved Successfully!</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        The changes to your event have been succesfully saved!
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Okay</button>
+                                </div>
+                            </div>
+                        </div>
 
 
+                        <div class="col-auto">
+                            <a href="profile.html" class="btn btn-secondary">Close</a>
+                        </div>
+
+                        <!-- Publish trigger modal -->
+                        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#publishModal">
+                            Publish Event
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="publishModal" tabindex="-1" role="dialog"
+                            aria-labelledby="publishModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="publishModalLabel">Enter Password to Publish Event
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="col-auto">
+                                            <label for="inputPassword2" class="sr-only">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword2"
+                                                placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Go
+                                            Back</button>
+                                        <a href="profile.html" class="btn btn-primary">Publish Event</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </form>
             </div>
-        </form>
+        </div>
     </div>
 </body>
 
