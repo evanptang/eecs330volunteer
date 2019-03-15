@@ -84,8 +84,14 @@
 
 <script>
 function myFunction(){
-  alert('Thanks for your registration! Directing you back to the home page');
-  window.location.href="main_page.html";
+  name = document.getElementById("name").value;
+  if(name == ""){
+    alert("ERROR: No Name entered");
+  }
+  else{
+    alert('Thanks for your registration! Directing you back to the home page');
+    window.location.href="main_page.html";
+  }
 }
 
 function signup() {
